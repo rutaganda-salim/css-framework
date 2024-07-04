@@ -1,0 +1,16 @@
+{
+  "name": "salixcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "build": "sass src/main.scss dist/main.css"
+},
+
+  "keywords": [],
+  "author": "Salim Rutaganda",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.77.6"
+  }
+}

@@ -1,0 +1,67 @@
+$ring-widths: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  8: 8px
+);
+
+:root {
+  --tw-ring-offset-width: 0px; // Default value, can be overridden as needed
+}
+
+@each $width, $value in $ring-widths {
+  .ring-#{$width} {
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(#{$value} + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  }
+}
+
+.ring-inset {
+  --tw-ring-inset: inset;
+}
+
+$offsets: (
+  0: 0px,
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px
+);
+
+@each $offset, $width in $offsets {
+  .ring-offset-#{$offset} {
+    --tw-ring-offset-width: $width;
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-shadow);
+  }
+}
+
+$offsets: (
+  0: 0px,
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px
+);
+
+@each $offset, $width in $offsets {
+  .ring-offset-#{$offset} {
+    --tw-ring-offset-width: $width;
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-shadow);
+  }
+}
+
+.ring-offset-inherit {
+  --tw-ring-offset-color: inherit;
+  box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-shadow);
+}
+
+.ring-offset-current {
+  --tw-ring-offset-color: currentColor;
+  box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-shadow);
+}
+
+.ring-offset-transparent {
+  --tw-ring-offset-color: transparent;
+  box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-shadow);
+}

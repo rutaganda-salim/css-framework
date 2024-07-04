@@ -322,10 +322,10 @@ $colors: (
   }
 }
 
-:root {
-  @each $name, $colorMap in $colors {
-    @each $key, $color in $colorMap {
-      --tw-ring-color-#{$name}-#{$key}: #{$color};
+@each $color, $shades in $colors {
+  @each $shade, $hex in $shades {
+    .ring-#{$color}-#{$shade} {
+      --tw-ring-color: $hex;
     }
   }
 }
