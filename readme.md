@@ -10,9 +10,15 @@ Welcome to the documentation for our SCSS utility classes package. This package 
 * [Colors](#colors)
 * [Borders](#borders)
 * [Flexbox](#flexbox)
-* [Usage](#usage)
+* [Spacing](#spacing)
+* [Sizing](#sizing)
+* [Typography](#typography)
+* [Backgrounds](#backgrounds)
+* [Effects](#effects)
+* [Flexbox & Grid](#flexbox--grid)
 * [Installation](#installation)
-* [Contributing](#contributing)
+* [Usage](#usage)
+* [Contributing](#contributions)
 * [License](#license)
 
 **Typography**
@@ -68,6 +74,21 @@ Welcome to the documentation for our SCSS utility classes package. This package 
 * `.border-{side}-0`: Removes border on `{side}` (e.g., top, right, bottom, left).
 * `.border-{side}-solid`: Applies solid border on `{side}`.
 
+**Borders**
+----------
+
+### Border Radius
+
+* `.rounded-{size}`: Applies border radius where `{size}` is small, medium, large, full.
+
+### Border Width
+
+* `.border-{width}`: Sets border width where `{width}` is thin, thick.
+
+### Border Style
+
+* `.border-{style}`: Sets border style where `{style}` is dashed, solid, double.
+
 **Flexbox**
 ---------
 
@@ -85,15 +106,94 @@ Welcome to the documentation for our SCSS utility classes package. This package 
 * `.flex-{shrink}`: Sets flex shrink factor.
 * `.order-{n}`: Sets order of flex item.
 
+**Spacing**
+---------
+
+### Padding
+
+* `.p-{size}`: Applies padding where `{size}` is small, medium, large.
+
+### Margin
+
+* `.m-{size}`: Applies margin where `{size}` is small, medium, large.
+
+**Sizing**
+---------
+
+### Width
+
+* `.w-{size}`: Sets width where `{size}` is small, medium, large.
+
+### Height
+
+* `.h-{size}`: Sets height where `{size}` is small, medium, large.
+
+### Min/Max Width/Height
+
+* `.min-w-{size}`: Sets minimum width.
+* `.max-w-{size}`: Sets maximum width.
+* `.min-h-{size}`: Sets minimum height.
+* `.max-h-{size}`: Sets maximum height.
+
+**Typography**
+-------------
+
+### Font Size
+
+* `.text-{size}`: Sets font size where `{size}` is small, medium, large.
+
+### Font Family
+
+* `.font-{family}`: Applies font family where `{family}` is serif, sans-serif, monospace.
+
+**Backgrounds**
+------------
+
+### Background Color
+
+* `.bg-{color}`: Applies background color where `{color}` corresponds to predefined color classes.
+
+### Background Image
+
+* `.bg-{image}`: Applies background image where `{image}` is url.
+
+**Effects**
+---------
+
+### Box Shadow
+
+* `.shadow-{type}`: Applies box shadow where `{type}` is small, medium, large.
+
+**Flexbox & Grid**
+------------
+
+### Flex
+
+* `.flex`: Enables flex container.
+* `.flex-{direction}`: Sets flex direction (row, row-reverse, col, col-reverse).
+* `.flex-wrap`: Allows flex items to wrap.
+* `.justify-{content}`: Aligns flex items along the main axis (start, end, center, between, around, evenly).
+* `.items-{align}`: Aligns flex items along the cross axis (start, end, center, baseline, stretch).
+
+### Grid
+
+* `.grid`: Enables grid container.
+* `.grid-cols-{num}`: Sets number of columns.
+* `.grid-rows-{num}`: Sets number of rows.
+* `.col-span-{num}`: Spans columns.
+* `.row-span-{num}`: Spans rows.
+
 **Installation**
 -------------
 
 ### Install
 
+```bash
 npm i salixcss
+```
 
 **Usage**
------
+--------
 
 To use these utility classes in your project, include the compiled SCSS file into your project's stylesheet:
 
