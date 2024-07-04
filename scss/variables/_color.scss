@@ -299,7 +299,7 @@ $colors: (
         text-decoration: #{$hex};
       }
       .border-#{$color}-#{$shade} {
-        border-color: var(--#{$color}-#{$shade});
+        border-color: #{$color}-#{$shade};
       }
 
       .bg-gradient-via-#{$color}-#{$shade} {
