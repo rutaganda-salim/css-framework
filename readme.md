@@ -85,6 +85,13 @@ Welcome to the documentation for our SCSS utility classes package. This package 
 * `.flex-{shrink}`: Sets flex shrink factor.
 * `.order-{n}`: Sets order of flex item.
 
+**Installation**
+-------------
+
+### Install
+
+npm i salixcss
+
 **Usage**
 -----
 
@@ -100,13 +107,9 @@ Apply directly to your html
   This text is centered, extra large, and has a blue background.
 </div>
 
-**Installation**
--------------
-
-### Install
-
-npm i salixcss
+```
 
 Run the following command:
+
 ### contributions
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
