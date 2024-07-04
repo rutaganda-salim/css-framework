@@ -1,4 +1,4 @@
-**SCSS Utility Classes Documentation**
+**Salixcss Utility Classes Documentation**
 =====================================
 
 Welcome to the documentation for our SCSS utility classes package. This package provides a comprehensive set of utility classes to enhance front-end development.
@@ -112,4 +112,11 @@ Apply directly to your html
 Run the following command:
 
 ### contributions
+------
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+**https://github.com/rutaganda-salim/salixcss**
+
+Please let's make this a huge and big a css framework for every developer!!
+
+
