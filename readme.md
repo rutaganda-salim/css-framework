@@ -112,11 +112,11 @@ Apply directly to your html
 Run the following command:
 
 ### contributions
-------
+-------------
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 **https://github.com/rutaganda-salim/salixcss**
 
-Please let's make this a huge and big a css framework for every developer!!
+Please let's make this a huge and big a css framework for every developer and I believe we can make it!!
 
 
