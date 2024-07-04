@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCSS Border and Rounded Corner Styles Test</title>
- <link rel="stylesheet" href="scss/main.css">
-</head>
-<body>
-  <div class="border-0 border-blue-600 rounded-l-xl" style="padding: 10px; background-color: #f0f0f0;">
-    Border width: 0px, Rounded corner l-xl (12px)
-  </div>
-  
-  <div class="border-2 border-blue-600 border-s-sm rounded-l-2xl" style="padding: 10px; background-color: #f0f0f0; margin-top: 10px;">
-    Border width: 2px, Rounded corner l-2xl (16px)
-  </div>
-  
-  <div class="border-8 border-pink-600 border-double bg-blue-600 border-e-lg rounded-l-3xl" style="padding: 10px; margin-top: 10px;">
-    Border width: 4px, Rounded corner l-3xl (24px)
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCSS Border and Rounded Corner Styles Test</title>
+        <link rel="stylesheet" href="scss/main.css">
+    </head>
+    <body>
+        <div class="border-10 border-blue-600 rounded-l-xl"
+            style="padding: 10px; background-color: #f0f0f0;">
+            Border width: 0px, Rounded corner l-xl (12px)
+        </div>
+
+        <div class="border-2 border-blue-600 border-s-sm rounded-l-2xl"
+            style="padding: 10px; background-color: #f0f0f0; margin-top: 10px;">
+            Border width: 2px, Rounded corner l-2xl (16px)
+        </div>
+
+        <div
+            class="border-8 border-pink-600 border-double bg-blue-600 border-e-lg rounded-l-3xl"
+            style="padding: 10px; margin-top: 10px;">
+            Border width: 4px, Rounded corner l-3xl (24px)
+        </div>
+        <div class="outline-none font-bold">Element with No Outline</div>
+        <div class="outline">Element with Solid Outline</div>
+        <div class="outline-dashed">Element with Dashed Outline</div>
+        <div class="outline-dotted">Element with Dotted Outline</div>
+        <div class="outline-double">Element with Double Outline</div>
+        <div class="ring-0">Element with Ring Width 0</div>
+        <div class="focus:ring-1">Element with Ring Width 1</div>
+        <div class="ring-2">Element with Ring Width 2</div>
+        <div class="ring-3">Element with Ring Width 3</div>
+        <div class="ring-4">Element with Ring Width 4</div>
+        <div class="ring-8">Element with Ring Width 8</div>
+
+    </body>
 </html>
