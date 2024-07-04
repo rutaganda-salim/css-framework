@@ -298,6 +298,9 @@ $colors: (
     .decoration-#{$color}-#{$shade} {
         text-decoration: #{$hex};
       }
+      .border-#{$color}-#{$shade} {
+        border-color: var(--#{$color}-#{$shade});
+      }
 
       .bg-gradient-via-#{$color}-#{$shade} {
         --tw-gradient-from: $value var(--tw-gradient-from-position);
