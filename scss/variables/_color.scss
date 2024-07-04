@@ -298,5 +298,21 @@ $colors: (
     .decoration-#{$color}-#{$shade} {
         text-decoration: #{$hex};
       }
+
+      .bg-gradient-via-#{$color}-#{$shade} {
+        --tw-gradient-from: $value var(--tw-gradient-from-position);
+        --tw-gradient-via: $value var(--tw-gradient-via-position); 
+        --tw-gradient-to: rgb(241 245 249 / 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to);
+        background-image: linear-gradient(to top, var(--tw-gradient-stops));
+      }
+  
+      
+      .bg-gradient-to-#{$color}-#{$shade} {
+        --tw-gradient-from: $value var(--tw-gradient-from-position);
+        --tw-gradient-to: #94a3b8 var(--tw-gradient-to-position); 
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        background-image: linear-gradient(to top, var(--tw-gradient-stops));
+      }
   }
 }
