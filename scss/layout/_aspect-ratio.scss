@@ -1,0 +1,11 @@
+// Aspect Ratio
+.aspect-ratio {
+    aspect-ratio: var(--aspect-ratio);
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+  

@@ -1,0 +1,30 @@
+// Container
+.container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .container-sm {
+      width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container-md {
+      width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-lg {
+      width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container-xl {
+      width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container-2xl {
+      width: 1536px;
+    }
+  }
+  

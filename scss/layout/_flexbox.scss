@@ -1,0 +1,235 @@
+// Flex Basis
+$flex-basis-values: (
+  "0": 0px,
+  "0\\.5": 0.125rem, /* 2px */
+  "1": 0.25rem,    /* 4px */
+  "1\\.5": 0.375rem, /* 6px */
+  "2": 0.5rem,     /* 8px */
+  "2\\.5": 0.625rem, /* 10px */
+  "3": 0.75rem,    /* 12px */
+  "3\\.5": 0.875rem, /* 14px */
+  "4": 1rem,       /* 16px */
+  "5": 1.25rem,    /* 20px */
+  "6": 1.5rem,     /* 24px */
+  "7": 1.75rem,    /* 28px */
+  "8": 2rem,       /* 32px */
+  "9": 2.25rem,    /* 36px */
+  "10": 2.5rem,    /* 40px */
+  "11": 2.75rem,   /* 44px */
+  "12": 3rem,      /* 48px */
+  "14": 3.5rem,    /* 56px */
+  "16": 4rem,      /* 64px */
+  "20": 5rem,      /* 80px */
+  "24": 6rem,      /* 96px */
+  "28": 7rem,      /* 112px */
+  "32": 8rem,      /* 128px */
+  "36": 9rem,      /* 144px */
+  "40": 10rem,     /* 160px */
+  "44": 11rem,     /* 176px */
+  "48": 12rem,     /* 192px */
+  "52": 13rem,     /* 208px */
+  "56": 14rem,     /* 224px */
+  "60": 15rem,     /* 240px */
+  "64": 16rem,     /* 256px */
+  "72": 18rem,     /* 288px */
+  "80": 20rem,     /* 320px */
+  "96": 24rem      /* 384px */
+);
+
+@each $key, $value in $flex-basis-values {
+  $key-quoted: unquote($key); // Unquote the key to handle the decimal point
+
+  .basis-#{$key-quoted} {
+    flex-basis: #{$value};
+  }
+}
+
+.basis-auto {
+  flex-basis: auto;
+}
+
+.basis-px {
+  flex-basis: 1px;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-1\/3 {
+  flex-basis: 33.333333%;
+}
+
+.basis-2\/3 {
+  flex-basis: 66.666667%;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+
+.basis-2\/4 {
+  flex-basis: 50%;
+}
+
+.basis-3\/4 {
+  flex-basis: 75%;
+}
+
+.basis-1\/5 {
+  flex-basis: 20%;
+}
+
+.basis-2\/5 {
+  flex-basis: 40%;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
+}
+
+.basis-4\/5 {
+  flex-basis: 80%;
+}
+
+.basis-1\/6 {
+  flex-basis: 16.666667%;
+}
+
+.basis-2\/6 {
+  flex-basis: 33.333333%;
+}
+
+.basis-3\/6 {
+  flex-basis: 50%;
+}
+
+.basis-4\/6 {
+  flex-basis: 66.666667%;
+}
+
+.basis-5\/6 {
+  flex-basis: 83.333333%;
+}
+
+.basis-1\/12 {
+  flex-basis: 8.333333%;
+}
+
+.basis-2\/12 {
+  flex-basis: 16.666667%;
+}
+
+.basis-3\/12 {
+  flex-basis: 25%;
+}
+
+.basis-4\/12 {
+  flex-basis: 33.333333%;
+}
+
+.basis-5\/12 {
+  flex-basis: 41.666667%;
+}
+
+.basis-6\/12 {
+  flex-basis: 50%;
+}
+
+.basis-7\/12 {
+  flex-basis: 58.333333%;
+}
+
+.basis-8\/12 {
+  flex-basis: 66.666667%;
+}
+
+.basis-9\/12 {
+  flex-basis: 75%;
+}
+
+.basis-10\/12 {
+  flex-basis: 83.333333%;
+}
+
+.basis-11\/12 {
+  flex-basis: 91.666667%;
+}
+
+.basis-full {
+  flex-basis: 100%;
+}
+
+// _flexbox.scss
+
+// Justify Content
+.justify-normal {
+    justify-content: normal;
+  }
+  
+  .justify-start {
+    justify-content: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  
+  .justify-stretch {
+    justify-content: stretch;
+  }
+  
+  // Justify Items
+  .justify-items-start {
+    justify-items: start;
+  }
+  
+  .justify-items-end {
+    justify-items: end;
+  }
+  
+  .justify-items-center {
+    justify-items: center;
+  }
+  
+  .justify-items-stretch {
+    justify-items: stretch;
+  }
+  
+  // Justify Self
+  .justify-self-auto {
+    justify-self: auto;
+  }
+  
+  .justify-self-start {
+    justify-self: start;
+  }
+  
+  .justify-self-end {
+    justify-self: end;
+  }
+  
+  .justify-self-center {
+    justify-self: center;
+  }
+  
+  .justify-self-stretch {
+    justify-self: stretch;
+  }
+  

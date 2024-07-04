@@ -1,0 +1,27 @@
+// Top/Right/Bottom/Left
+@for $i from 0 through 96 {
+  $value-rem: $i * 0.125rem;
+  $value-px: $i * 1px;
+
+  // Generate classes for pixel values
+  .inset-#{$i}-px {
+    inset: #{$value-px};
+  }
+  .inset-x-#{$i}-px {
+    inset-inline: #{$value-px};
+  }
+  .inset-y-#{$i}-px {
+    inset-block: #{$value-px};
+  }
+  
+  // Generate classes for rem values
+  .inset-#{$i}-rem {
+    inset: #{$value-rem};
+  }
+  .inset-x-#{$i}-rem {
+    inset-inline: #{$value-rem};
+  }
+  .inset-y-#{$i}-rem {
+    inset-block: #{$value-rem};
+  }
+}

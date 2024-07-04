@@ -1,0 +1,51 @@
+// Columns
+@for $i from 1 through 12 {
+    .columns-#{$i} {
+      columns: #{$i};
+    }
+  }
+  .columns-auto {
+    columns: auto;
+  }
+  
+  // Responsive columns
+  .columns-3xs {
+    columns: 16rem; /* 256px */
+  }
+  .columns-2xs {
+    columns: 18rem; /* 288px */
+  }
+  .columns-xs {
+    columns: 20rem; /* 320px */
+  }
+  .columns-sm {
+    columns: 24rem; /* 384px */
+  }
+  .columns-md {
+    columns: 28rem; /* 448px */
+  }
+  .columns-lg {
+    columns: 32rem; /* 512px */
+  }
+  .columns-xl {
+    columns: 36rem; /* 576px */
+  }
+  .columns-2xl {
+    columns: 42rem; /* 672px */
+  }
+  .columns-3xl {
+    columns: 48rem; /* 768px */
+  }
+  .columns-4xl {
+    columns: 56rem; /* 896px */
+  }
+  .columns-5xl {
+    columns: 64rem; /* 1024px */
+  }
+  .columns-6xl {
+    columns: 72rem; /* 1152px */
+  }
+  .columns-7xl {
+    columns: 80rem; /* 1280px */
+  }
+  
