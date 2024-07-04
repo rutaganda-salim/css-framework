@@ -71,7 +71,7 @@ $rounded-corners: (
   "br-lg": 0.5rem, /* 8px */
   "br-xl": 0.75rem, /* 12px */
   "br-2xl": 1rem, /* 16px */
-  "br-3xl": 1.5rem, /* 24px */
+  "br-3xl":1.5rem, /* 24px */
   "br-full": 9999px,
   "bl-none": 0px,
   "bl-sm": 0.125rem, /* 2px */
@@ -95,31 +95,166 @@ $rounded-corners: (
 @each $name, $value in $border-widths {
   .border-#{$name} {
     border-width: $value;
+    border-style: solid;
+    
   }
   .border-x-#{$name} {
     border-left-width: $value;
     border-right-width: $value;
+    border-left-style: solid;
+    border-right-style: solid;
+    
   }
   .border-y-#{$name} {
     border-top-width: $value;
     border-bottom-width: $value;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    
   }
   .border-s-#{$name} {
     border-inline-start-width: $value;
+    border-inline-start-style: solid;
+    
   }
   .border-e-#{$name} {
     border-inline-end-width: $value;
+    border-inline-end-style: solid;
+    
   }
   .border-t-#{$name} {
     border-top-width: $value;
+    border-top-style: solid;
+    
   }
   .border-r-#{$name} {
     border-right-width: $value;
+    border-right-style: solid;
+    
   }
   .border-b-#{$name} {
     border-bottom-width: $value;
+    border-bottom-style: solid;
+    
   }
   .border-l-#{$name} {
     border-left-width: $value;
+    border-left-style: solid;
+    
   }
 }
+// Border styles utility classes
+.border-solid {
+    border-style: solid;
+  }
+  
+  .border-dashed {
+    border-style: dashed;
+  }
+  
+  .border-dotted {
+    border-style: dotted;
+  }
+  
+  .border-double {
+    border-style: double;
+  }
+  
+  .border-hidden {
+    border-style: hidden;
+  }
+  
+  .border-none {
+    border-style: none;
+  }
+// Divide width utility classes
+.divide-x-0 > * + * {
+    border-right-width: 0px;
+    border-left-width: 0px;
+  }
+  
+  .divide-x-2 > * + * {
+    border-right-width: 0px;
+    border-left-width: 2px;
+  }
+  
+  .divide-x-4 > * + * {
+    border-right-width: 0px;
+    border-left-width: 4px;
+  }
+  
+  .divide-x-8 > * + * {
+    border-right-width: 0px;
+    border-left-width: 8px;
+  }
+  
+  .divide-x > * + * {
+    border-right-width: 0px;
+    border-left-width: 1px;
+  }
+  
+  .divide-y-0 > * + * {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+  
+  .divide-y-2 > * + * {
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+  }
+  
+  .divide-y-4 > * + * {
+    border-top-width: 4px;
+    border-bottom-width: 0px;
+  }
+  
+  .divide-y-8 > * + * {
+    border-top-width: 8px;
+    border-bottom-width: 0px;
+  }
+  
+  .divide-y > * + * {
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+  }
+  
+  .divide-y-reverse > * + * {
+    --tw-divide-y-reverse: 1;
+  }
+  
+  .divide-x-reverse > * + * {
+    --tw-divide-x-reverse: 1;
+  }
+  
+  .divide-inherit > * + * {
+    border-color: inherit;
+  }
+  
+  .divide-current > * + * {
+    border-color: currentColor;
+  }
+  
+  .divide-transparent > * + * {
+    border-color: transparent;
+  }
+  
+  .divide-solid > * + * {
+    border-style: solid;
+  }
+  
+  .divide-dashed > * + * {
+    border-style: dashed;
+  }
+  
+  .divide-dotted > * + * {
+    border-style: dotted;
+  }
+  
+  .divide-double > * + * {
+    border-style: double;
+  }
+  
+  .divide-none > * + * {
+    border-style: none;
+  }
+    
